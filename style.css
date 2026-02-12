@@ -18,7 +18,6 @@
   letter-spacing: 4px;
   color: #8c8c8c;
 
-  /* Clip-path w polygonie (% jest łatwiejsze) */
   clip-path: polygon(
     0% 100%, 40% 100%, 45% 0%, 55% 0%, 60% 100%, 100% 100%, 100% 0%, 0% 0%
   );
@@ -32,9 +31,10 @@
 
     .about {
     font-family: 'Typewriter_Condensed', monospace;
-    font-size: 48px; /* dowolna wielkość */
+font-size: clamp(1.4rem, 4vw, 3rem);
     line-height: 1.5;
     color: #838986;
   transform: translate(43%, -200%);
+
 
 }
