@@ -1,0 +1,40 @@
+.section-wrapper {
+  position: relative;
+  margin: 100px 0;
+}
+
+.line {
+  height: 1px;
+  background: #bdbdbd;
+}
+
+.tag {
+  position: absolute;
+  top: -22px;
+  left: 20%;
+  padding: 18px 60px;
+  background: #f2f2f2;
+  font-size: 14px;
+  letter-spacing: 4px;
+  color: #8c8c8c;
+
+  /* Clip-path w polygonie (% jest łatwiejsze) */
+  clip-path: polygon(
+    0% 100%, 40% 100%, 45% 0%, 55% 0%, 60% 100%, 100% 100%, 100% 0%, 0% 0%
+  );
+}
+
+    svg {
+      width: 100%;
+      height: auto;
+      display: block; /* usuwa marginesy pod SVG */
+    }
+
+    .about {
+    font-family: 'Typewriter_Condensed', monospace;
+    font-size: 48px; /* dowolna wielkość */
+    line-height: 1.5;
+    color: #838986;
+  transform: translate(43%, -200%);
+
+}
